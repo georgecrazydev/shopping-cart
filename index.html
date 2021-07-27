@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Shopping Cart</title>
+</head>
+
+<body>
+  <!-- *header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Shopping Cart</h1>
+      <div class="header__wrapper">
+        <button class="header__cart">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <div class="header__cart-counter">0</div>
+      </div>
+    </div>
+  </header>
+  <!-- *header end -->
+
+  <!-- *goods -->
+  <div class="goods">
+    <div class="container">
+      <div class="goods__inner">
+        <!-- *generate items from js -->
+      </div>
+    </div>
+  </div>
+  <!-- *goods end -->
+
+  <!-- *cart -->
+  <div class="cart">
+    <div class="cart__container">
+      <button class="cart__close">
+        <i class="fas fa-times"></i>
+      </button>
+      <h2 class="cart__title">Cart</h2>
+      <div class="cart__items">
+
+      </div>
+      <div class="cart__total">
+        Total: <span class="cart__total-sum"></span>
+      </div>
+      <button class="cart__purchase">
+        Purchase
+      </button>
+    </div>
+  </div>
+  <!-- *cart end -->
+
+  <!-- *form -->
+  <form class="form">
+    <button type="button" class="form__close">
+      <i class="fas fa-times"></i>
+    </button>
+    <h3 class="form__title">Buy in one click</h3>
+    <input class="form__text" type="text" placeholder="Name" required>
+    <input class="form__email" type="email" placeholder="Mail" required>
+    <input class="form__number" type="number" placeholder="Number" required>
+    <button class="form__button" type="submit">Buy</button>
+  </form>
+  <!-- *form end -->
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
